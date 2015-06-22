@@ -1,10 +1,11 @@
 # run grangerlasso.R first
 # input matrix
-input = test[,c(4:8,10:21)]
-N = dim(input)[2]
+refinedtest = test[,c(4:8,10:21)]
+input = t(refinedtest)
+N = dim(input)[1]
 # run lasso granger
 lambda = 1e-2;
-L = 5;      
+L = 10;      
 
 cause = matrix(0,N,N)
 for (i in 1:N){

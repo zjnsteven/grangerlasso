@@ -4,6 +4,7 @@
 # 'lambda': 	Value of the penalization parameter in Lasso
 # 'type': 	'l' Lasso with the given Lambda
 #  require r package glmnet
+# based on the matlab version 
 grangerlasso <-function(series, P, lmd, type)
 {
   N = dim(series)[1]
